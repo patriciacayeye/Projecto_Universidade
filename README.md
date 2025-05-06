@@ -1,2 +1,2 @@
 # Projecto_Universidade
-Este Repositório foi criado armazenar para trabalhos da universidade.
+Este Repositório foi criado para armazenar trabalhos da universidade.
