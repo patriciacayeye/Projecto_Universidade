@@ -2,11 +2,13 @@ import { useState } from "react"
 import { View, Image, Text, StatusBar } from "react-native"
 import { Ionicons, MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons"
 import { Link, Redirect } from "expo-router"
+import { useRouter } from 'expo-router';
 
 import { Input } from "../components/input"
 import { colors } from "../styles/colors"
 import { Button } from "../components/button"
 
+const router = useRouter();
 
 export default function Login(){
     return (
@@ -40,8 +42,11 @@ export default function Login(){
                 </Input>
                 <Link  href="/register"  className=" text-gray-100 text-base font-bold text-left "> Esqueceu sua senha? </Link>
                 
-                <Button title=" Entrar" //OnPress={} isLoading={}
-                   />
+                <Button 
+  title="Entrar" 
+  onPress={() => router.push('/dashboard')} 
+    />
+
 
                 <View className="flex-row items-center justify-center  ">
              <Text className="text-gray-100 text-base font-bold text-center mt-8" >Ainda não tem uma conta?</Text> 
